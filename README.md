@@ -1,6 +1,6 @@
 # scoop-bucket
 
-Personal Scoop bucket.
+Personal Scoop bucket for installing and auto-updating Windows CLI tools that are not yet available in official Scoop buckets.
 
 [中文文档](README.zh-CN.md)
 
