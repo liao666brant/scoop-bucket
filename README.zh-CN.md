@@ -1,6 +1,6 @@
 # scoop-bucket
 
-这是一个个人维护的 [Scoop](https://scoop.sh/) bucket 仓库，用于在 Windows 上安装和管理一些未收录到官方 bucket 的软件。
+这是一个个人维护的 [Scoop](https://scoop.sh/) bucket 仓库，用于在 Windows 上安装和自动更新一些尚未收录到官方 bucket 的命令行工具。
 
 ## 添加 bucket
 
