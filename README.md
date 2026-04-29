@@ -2,6 +2,8 @@
 
 Personal Scoop bucket.
 
+[中文文档](README.zh-CN.md)
+
 ## Add this bucket
 
 ```powershell
