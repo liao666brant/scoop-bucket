@@ -36,6 +36,21 @@ $env:ANTHROPIC_AUTH_TOKEN = "unused"
 claude
 ```
 
+### deepseek-tui
+
+```powershell
+scoop install deepseek-tui
+```
+
+`deepseek-tui` is a terminal-native coding agent for DeepSeek models. The Scoop package installs both `deepseek.exe` and `deepseek-tui.exe` because the dispatcher delegates to the TUI runtime.
+
+After installation:
+
+```powershell
+deepseek auth set --provider deepseek
+deepseek
+```
+
 ## Auto update
 
 This bucket uses GitHub Actions to run Scoop `checkver.ps1 -Update` every day.
