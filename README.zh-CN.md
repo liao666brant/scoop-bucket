@@ -68,6 +68,40 @@ $env:ANTHROPIC_AUTH_TOKEN = "unused"
 claude
 ```
 
+### deepseek-tui
+
+`deepseek-tui` 是一个面向 DeepSeek 模型的终端原生编程 Agent。这个 Scoop 包会同时安装 `deepseek.exe` 和 `deepseek-tui.exe`，因为 `deepseek` 启动器会委托调用同目录下的 TUI 运行时。
+
+项目地址：
+
+```txt
+https://github.com/Hmbown/DeepSeek-TUI
+```
+
+安装：
+
+```powershell
+scoop install deepseek-tui
+```
+
+查看版本：
+
+```powershell
+deepseek --version
+```
+
+配置 DeepSeek API Key：
+
+```powershell
+deepseek auth set --provider deepseek
+```
+
+启动 TUI：
+
+```powershell
+deepseek
+```
+
 ## 更新软件
 
 更新 bucket 信息：
@@ -76,10 +110,11 @@ claude
 scoop update
 ```
 
-更新 `oc-go-cc`：
+更新单个软件：
 
 ```powershell
 scoop update oc-go-cc
+scoop update deepseek-tui
 ```
 
 更新所有软件：
@@ -108,7 +143,7 @@ GitHub 仓库 → Actions → Update Scoop manifests → Run workflow
 
 ## manifest 说明
 
-`bucket/oc-go-cc.json` 中包含：
+`bucket/*.json` 中通常包含：
 
 - `version`：当前软件版本；
 - `architecture`：不同 CPU 架构对应的下载地址；
@@ -123,17 +158,14 @@ oc-go-cc_windows-amd64.exe
 oc-go-cc_windows-arm64.exe
 ```
 
-安装时会通过 Scoop 的 `#/oc-go-cc.exe` 规则重命名为统一的：
+`deepseek-tui` 的 Windows Release 文件名为：
 
 ```txt
-oc-go-cc.exe
+deepseek-windows-x64.exe
+deepseek-tui-windows-x64.exe
 ```
 
-因此安装后可以直接使用：
-
-```powershell
-oc-go-cc
-```
+安装时会通过 Scoop 的 `#/xxx.exe` 规则重命名为统一的可执行文件名。
 
 ## 注意事项
 
@@ -141,6 +173,7 @@ oc-go-cc
 - 如果安装失败，优先检查上游 Release 是否包含对应架构的 Windows 文件。
 - 如果 `scoop install` 找不到包，确认是否已经执行过 `scoop bucket add`。
 - 如果自动更新没有提交变化，通常说明上游没有新版本。
+- `deepseek-tui` 在 Windows 上目前只配置了 x64 预编译包。
 
 ## 常用命令
 
@@ -148,17 +181,20 @@ oc-go-cc
 # 添加 bucket
 scoop bucket add liao666brant https://github.com/liao666brant/scoop-bucket
 
-# 安装 oc-go-cc
+# 安装软件
 scoop install oc-go-cc
+scoop install deepseek-tui
 
 # 更新 bucket 索引
 scoop update
 
-# 更新 oc-go-cc
+# 更新软件
 scoop update oc-go-cc
+scoop update deepseek-tui
 
-# 卸载 oc-go-cc
+# 卸载软件
 scoop uninstall oc-go-cc
+scoop uninstall deepseek-tui
 
 # 查看已添加的 bucket
 scoop bucket list
