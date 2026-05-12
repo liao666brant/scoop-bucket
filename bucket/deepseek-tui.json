@@ -1,17 +1,17 @@
 {
-    "version": "0.8.28",
+    "version": "0.8.31",
     "description": "Terminal-native coding agent for DeepSeek models.",
     "homepage": "https://github.com/Hmbown/DeepSeek-TUI",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.28/deepseek-windows-x64.exe#/deepseek.exe",
-                "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.28/deepseek-tui-windows-x64.exe#/deepseek-tui.exe"
+                "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.31/deepseek-windows-x64.exe#/deepseek.exe",
+                "https://github.com/Hmbown/DeepSeek-TUI/releases/download/v0.8.31/deepseek-tui-windows-x64.exe#/deepseek-tui.exe"
             ],
             "hash": [
-                "0551c0b2f786cdf8f87555272367ab7cca3174f9f63ba199b4eef58b36dce860",
-                "d6bf5b938c29451fd74ea80ea005ef2dfe06d9a1dfac3f2c31b15705fa8d63a0"
+                "b9ee134984b14de056dcd509c6c25df9bfca35c765bc217f5c44f7603b341531",
+                "cfd84c2bb633d21bc1d62a7bd3eae6b34d5ebcdc8f4fa7246b9a8316b3723472"
             ]
         }
     },
