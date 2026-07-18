@@ -1,12 +1,7 @@
 [
   {
-    "name": "oc-go-cc",
-    "repo": "samueltuyizere/oc-go-cc",
-    "manifest": "bucket/oc-go-cc.json"
-  },
-  {
-    "name": "deepseek-tui",
-    "repo": "Hmbown/DeepSeek-TUI",
-    "manifest": "bucket/deepseek-tui.json"
+    "name": "browserskill",
+    "repo": "Tencent/BrowserSkill",
+    "manifest": "bucket/browserskill.json"
   }
 ]

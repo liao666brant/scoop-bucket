@@ -14,92 +14,38 @@ scoop bucket add liao666brant https://github.com/liao666brant/scoop-bucket
 
 ## 当前软件包
 
-### oc-go-cc
+### browserskill
 
-`oc-go-cc` 是一个 Go 编写的 CLI 代理工具，可以让 Claude Code 通过 Anthropic API 格式访问 OpenCode Go 订阅。
+`browserskill` 让 Codex、Claude Code、Cursor 等能够执行 Shell 命令的 AI Agent 操作已登录的 Chrome 或 Edge。Scoop 包安装的是 `bsk` CLI；浏览器扩展需要另外安装。
 
 项目地址：
 
 ```txt
-https://github.com/samueltuyizere/oc-go-cc
+https://github.com/Tencent/BrowserSkill
 ```
 
 安装：
 
 ```powershell
-scoop install oc-go-cc
+scoop install browserskill
 ```
 
-查看版本：
-
-```powershell
-oc-go-cc --version
-```
-
-初始化配置：
-
-```powershell
-oc-go-cc init
-```
-
-设置 OpenCode Go API Key：
-
-```powershell
-$env:OC_GO_CC_API_KEY = "sk-opencode-your-key"
-```
-
-启动代理服务：
-
-```powershell
-oc-go-cc serve
-```
-
-默认监听地址为：
+安装浏览器扩展：
 
 ```txt
-http://127.0.0.1:3456
+https://chromewebstore.google.com/detail/hhcmgoofomhgciiibhipgmgkgnoenaoi
 ```
 
-然后配置 Claude Code：
+为当前使用的 AI Agent 安装技能：
 
 ```powershell
-$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:3456"
-$env:ANTHROPIC_AUTH_TOKEN = "unused"
-claude
+bsk install-skill
 ```
 
-### deepseek-tui
-
-`deepseek-tui` 是一个面向 DeepSeek 模型的终端原生编程 Agent。这个 Scoop 包会同时安装 `deepseek.exe` 和 `deepseek-tui.exe`，因为 `deepseek` 启动器会委托调用同目录下的 TUI 运行时。
-
-项目地址：
-
-```txt
-https://github.com/Hmbown/DeepSeek-TUI
-```
-
-安装：
+检查 CLI、后台服务和浏览器扩展连接：
 
 ```powershell
-scoop install deepseek-tui
-```
-
-查看版本：
-
-```powershell
-deepseek --version
-```
-
-配置 DeepSeek API Key：
-
-```powershell
-deepseek auth set --provider deepseek
-```
-
-启动 TUI：
-
-```powershell
-deepseek
+bsk status
 ```
 
 ## 更新软件
@@ -113,8 +59,7 @@ scoop update
 更新单个软件：
 
 ```powershell
-scoop update oc-go-cc
-scoop update deepseek-tui
+scoop update browserskill
 ```
 
 更新所有软件：
@@ -151,29 +96,12 @@ GitHub 仓库 → Actions → Update Scoop manifests → Run workflow
 - `checkver`：用于检查 GitHub Release 最新版本；
 - `autoupdate`：用于自动拼接新版本下载地址并更新 hash。
 
-`oc-go-cc` 的 Windows Release 文件名为：
-
-```txt
-oc-go-cc_windows-amd64.exe
-oc-go-cc_windows-arm64.exe
-```
-
-`deepseek-tui` 的 Windows Release 文件名为：
-
-```txt
-deepseek-windows-x64.exe
-deepseek-tui-windows-x64.exe
-```
-
-安装时会通过 Scoop 的 `#/xxx.exe` 规则重命名为统一的可执行文件名。
-
 ## 注意事项
 
 - 第一次添加 manifest 时，如果使用了 `releases/latest/download` 和 `hash: skip`，建议尽快运行一次 GitHub Actions，让 Scoop 自动更新到真实版本号和 hash。
 - 如果安装失败，优先检查上游 Release 是否包含对应架构的 Windows 文件。
 - 如果 `scoop install` 找不到包，确认是否已经执行过 `scoop bucket add`。
 - 如果自动更新没有提交变化，通常说明上游没有新版本。
-- `deepseek-tui` 在 Windows 上目前只配置了 x64 预编译包。
 
 ## 常用命令
 
@@ -182,19 +110,16 @@ deepseek-tui-windows-x64.exe
 scoop bucket add liao666brant https://github.com/liao666brant/scoop-bucket
 
 # 安装软件
-scoop install oc-go-cc
-scoop install deepseek-tui
+scoop install browserskill
 
 # 更新 bucket 索引
 scoop update
 
 # 更新软件
-scoop update oc-go-cc
-scoop update deepseek-tui
+scoop update browserskill
 
 # 卸载软件
-scoop uninstall oc-go-cc
-scoop uninstall deepseek-tui
+scoop uninstall browserskill
 
 # 查看已添加的 bucket
 scoop bucket list

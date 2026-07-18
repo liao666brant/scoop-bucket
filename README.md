@@ -12,43 +12,19 @@ scoop bucket add liao666brant https://github.com/liao666brant/scoop-bucket
 
 ## Install packages
 
-### oc-go-cc
+### browserskill
 
 ```powershell
-scoop install oc-go-cc
+scoop install browserskill
 ```
 
-`oc-go-cc` is a Go CLI proxy that lets you use an OpenCode Go subscription with Claude Code.
+`browserskill` connects shell-capable AI agents such as Codex, Claude Code, and Cursor to a logged-in Chrome or Edge browser. The Scoop package installs the `bsk` CLI; install the [BrowserSkill extension](https://chromewebstore.google.com/detail/hhcmgoofomhgciiibhipgmgkgnoenaoi) separately.
 
 After installation:
 
 ```powershell
-oc-go-cc init
-$env:OC_GO_CC_API_KEY = "sk-opencode-your-key"
-oc-go-cc serve
-```
-
-Configure Claude Code:
-
-```powershell
-$env:ANTHROPIC_BASE_URL = "http://127.0.0.1:3456"
-$env:ANTHROPIC_AUTH_TOKEN = "unused"
-claude
-```
-
-### deepseek-tui
-
-```powershell
-scoop install deepseek-tui
-```
-
-`deepseek-tui` is a terminal-native coding agent for DeepSeek models. The Scoop package installs both `deepseek.exe` and `deepseek-tui.exe` because the dispatcher delegates to the TUI runtime.
-
-After installation:
-
-```powershell
-deepseek auth set --provider deepseek
-deepseek
+bsk install-skill
+bsk status
 ```
 
 ## Auto update
