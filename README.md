@@ -27,6 +27,14 @@ bsk install-skill
 bsk status
 ```
 
+### nub
+
+```powershell
+scoop install nub
+```
+
+`nub` is a fast all-in-one Node.js toolkit (runtime, package manager, script runner, and version manager). Homepage: [nubjs.com](https://nubjs.com). Source: [nubjs/nub](https://github.com/nubjs/nub).
+
 ## Auto update
 
 This bucket uses GitHub Actions to run Scoop `checkver.ps1 -Update` every day.

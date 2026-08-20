@@ -48,6 +48,22 @@ bsk install-skill
 bsk status
 ```
 
+### nub
+
+`nub` 是一个快速的一体化 Node.js 工具包（运行时、包管理、脚本运行器、版本管理）。
+
+项目地址：
+
+```txt
+https://github.com/nubjs/nub
+```
+
+安装：
+
+```powershell
+scoop install nub
+```
+
 ## 更新软件
 
 更新 bucket 信息：
