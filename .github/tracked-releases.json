@@ -3,5 +3,10 @@
     "name": "browserskill",
     "repo": "Tencent/BrowserSkill",
     "manifest": "bucket/browserskill.json"
+  },
+  {
+    "name": "luvus",
+    "repo": "RizRiyz/luvus",
+    "manifest": "bucket/luvus.json"
   }
 ]
