@@ -14,6 +14,12 @@ scoop bucket add liao666brant https://github.com/liao666brant/scoop-bucket
 
 ## 当前软件包
 
+| 软件 | 版本 | 描述 | 项目地址 |
+|---|---|---|---|
+| browserskill | 0.1.10 | 让可执行 Shell 命令的 AI Agent 操作已登录的 Chromium 浏览器 | [Tencent/BrowserSkill](https://github.com/Tencent/BrowserSkill) |
+| luvus | 0.12.0 | AI 编程代理的使命控制中心 | [RizRiyz/luvus](https://github.com/RizRiyz/luvus) |
+| nub | 0.7.5 | 快速一体化 Node.js 工具包 | [nubjs/nub](https://github.com/nubjs/nub) |
+
 ### browserskill
 
 `browserskill` 让 Codex、Claude Code、Cursor 等能够执行 Shell 命令的 AI Agent 操作已登录的 Chrome 或 Edge。Scoop 包安装的是 `bsk` CLI；浏览器扩展需要另外安装。
@@ -62,6 +68,22 @@ https://github.com/nubjs/nub
 
 ```powershell
 scoop install nub
+```
+
+### luvus
+
+`luvus` 是 AI 编程代理的终端工作区管理器，可在同一个 TUI 中管理会话、工作区、标签页、面板与代理。
+
+项目地址：
+
+```txt
+https://github.com/RizRiyz/luvus
+```
+
+安装：
+
+```powershell
+scoop install luvus
 ```
 
 ## 更新软件

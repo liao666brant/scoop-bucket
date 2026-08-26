@@ -12,6 +12,12 @@ scoop bucket add liao666brant https://github.com/liao666brant/scoop-bucket
 
 ## Install packages
 
+| Package | Version | Description | Source |
+|---|---|---|---|
+| browserskill | 0.1.10 | Connect shell-capable AI agents to a real, logged-in Chromium browser. | [Tencent/BrowserSkill](https://github.com/Tencent/BrowserSkill) |
+| luvus | 0.12.0 | Mission control for your AI agents. | [RizRiyz/luvus](https://github.com/RizRiyz/luvus) |
+| nub | 0.7.5 | The fast all-in-one Node.js toolkit. | [nubjs/nub](https://github.com/nubjs/nub) |
+
 ### browserskill
 
 ```powershell
@@ -34,6 +40,14 @@ scoop install nub
 ```
 
 `nub` is a fast all-in-one Node.js toolkit (runtime, package manager, script runner, and version manager). Homepage: [nubjs.com](https://nubjs.com). Source: [nubjs/nub](https://github.com/nubjs/nub).
+
+### luvus
+
+```powershell
+scoop install luvus
+```
+
+`luvus` is a terminal workspace for AI coding agents, managing sessions, workspaces, tabs, panes, and agents from one TUI. Source: [RizRiyz/luvus](https://github.com/RizRiyz/luvus).
 
 ## Auto update
 
