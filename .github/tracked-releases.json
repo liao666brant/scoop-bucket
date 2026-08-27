@@ -8,5 +8,10 @@
     "name": "luvus",
     "repo": "RizRiyz/luvus",
     "manifest": "bucket/luvus.json"
+  },
+  {
+    "name": "nub",
+    "repo": "nubjs/nub",
+    "manifest": "bucket/nub.json"
   }
 ]
